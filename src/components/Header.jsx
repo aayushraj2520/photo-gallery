@@ -1,8 +1,9 @@
 import React from "react";
 
 const Header = React.memo(function Header({ searchQuery, onSearchChange }) {
+  // for demonstration purpose
   console.log("Header Rendered");
-  
+
   return (
     <header className="bg-white shadow-md py-6 px-4 mb-6 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
