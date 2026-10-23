@@ -25,7 +25,7 @@ const favouritesReducer = (state, action) => {
   }
 };
 
-function App() {
+export default function App() {
   const { photos, loading, error } = useFetchPhotos();
   const [favourites, dispatch] = useReducer(favouritesReducer, null, loadInitialFavourites);
   const [searchQuery, setSearchQuery] = useState("");
@@ -113,5 +113,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
