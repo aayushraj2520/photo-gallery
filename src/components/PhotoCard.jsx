@@ -8,6 +8,7 @@ export default function PhotoCard({ photo, isFavourite, onToggleFavourite }) {
                     src={photo.download_url}
                     alt={`Captured by ${photo.author}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
                 />
                 {/* Subtle overlay */}
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
